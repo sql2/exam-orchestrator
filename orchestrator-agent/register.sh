@@ -1,5 +1,9 @@
 #!/bin/bash
 
+export ORCHESTRATOR_CLIENT=$(pwd)
+
+export PATH=${ORCHESTRATOR_CLIENT}:${PATH}
+
 # orchestrator-client -c forget -i $HOSTNAME:3306
 
 orchestrator-client -c discover -i $HOSTNAME:3306
